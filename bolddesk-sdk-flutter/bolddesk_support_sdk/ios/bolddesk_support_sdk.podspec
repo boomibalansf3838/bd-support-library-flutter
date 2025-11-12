@@ -16,7 +16,7 @@ The SDK provides easy access to help your app end users
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '14.0'
-  s.dependency 'bd-support-library', '~> 1.0.6'
+  s.dependency 'bd-support-library', '~> 1.0.7'
   s.ios.deployment_target = '14.0'
 
   # Flutter.framework does not contain a i386 slice.
