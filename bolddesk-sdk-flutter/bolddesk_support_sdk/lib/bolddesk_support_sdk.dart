@@ -1,6 +1,6 @@
 import 'bolddesk_support_sdk_platform_interface.dart';
 
-class BolddeskSupportSdk {
+class BoldDeskSupportSdk {
   static Future<void> initialize(
     String appId,
     String brandUrl, {

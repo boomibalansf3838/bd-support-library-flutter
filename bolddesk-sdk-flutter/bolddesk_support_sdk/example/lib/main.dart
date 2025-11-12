@@ -29,7 +29,7 @@ Future<void> main() async {
   if (Platform.isIOS) {
     FirebaseMessaging.instance.getInitialMessage().then((message) async {
       if (message != null) {
-        BolddeskSupportSdk.handleIOSNotification(message.data);
+        BoldDeskSupportSdk.handleIOSNotification(message.data);
       }
     });
   }
@@ -74,28 +74,28 @@ class _MyAppState extends State<MyApp> {
           children: [
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.showHome();
+                BoldDeskSupportSdk.showHome();
               },
               child: Text("Show Home"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.showKB();
+                BoldDeskSupportSdk.showKB();
               },
               child: Text("Show KB"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.showCreateTicket();
+                BoldDeskSupportSdk.showCreateTicket();
               },
               child: Text("Show Create Ticket"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.initialize(
+                BoldDeskSupportSdk.initialize(
                   "VcVGW+Om90d2ZW4ivuuendHtDS/qqdhZkBk6nzKStotppzqgu7ZMjgnk71+MjgUgQ3698FQybWCzNyey3DLbmw==",
                   "stagingboldsign.bolddesk.com",
                   onSuccess: (message) {
@@ -115,7 +115,7 @@ class _MyAppState extends State<MyApp> {
                       "lHfejZoxxBi6Pe4WOggOgfX6tmngKff9qzFeLmNj4cLep3NW9tYdiJQxJOcC76SinL2KC0sZUo0qRgAKlQGR0g==",
                   email: "somaprasanna.m@syncfusion.com",
                 );
-                BolddeskSupportSdk.loginWithJWTToken(
+                BoldDeskSupportSdk.loginWithJWTToken(
                   jwtToken,
                   onSuccess: (message) {
                     print("SDK Initialized Successfully: $message");
@@ -130,21 +130,21 @@ class _MyAppState extends State<MyApp> {
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.applyTheme("#FF0000", "#00FF00");
+                BoldDeskSupportSdk.applyTheme("#FF0000", "#00FF00");
               },
               child: Text("Theme Color Change"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.setPreferredTheme("system");
+                BoldDeskSupportSdk.setPreferredTheme("system");
               },
               child: Text("ThemeMode"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.logout();
+                BoldDeskSupportSdk.logout();
               },
 
               child: Text("Logout"),
@@ -152,7 +152,7 @@ class _MyAppState extends State<MyApp> {
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.applyCustomFontFamilyInIOS(
+                BoldDeskSupportSdk.applyCustomFontFamilyInIOS(
                   "Times New Roman",
                 );
               },
@@ -161,7 +161,7 @@ class _MyAppState extends State<MyApp> {
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.setSystemFontSize(false);
+                BoldDeskSupportSdk.setSystemFontSize(false);
               },
               child: Text("Font Size"),
             ),
@@ -192,14 +192,14 @@ class _MyAppState extends State<MyApp> {
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.setLoggingEnabled(true);
+                BoldDeskSupportSdk.setLoggingEnabled(true);
               },
               child: Text("Set Logging Enabled"),
             ),
 
             ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.applyCustomFontFamilyInAndroid(
+                BoldDeskSupportSdk.applyCustomFontFamilyInAndroid(
                   bold: "dancingscript_bold",
                   semiBold: "dancingscript_semibold",
                   medium: "dancingscript_medium",
@@ -211,7 +211,7 @@ class _MyAppState extends State<MyApp> {
 
              ElevatedButton(
               onPressed: () {
-                BolddeskSupportSdk.setFCMRegistrationToken("fXI54TkpTruS38JPQ4zGLf:APA91bGHzj-yfZEiJJKPpWYDb0NI4jV7QfwT9qZ8_FRInznrXS9_Pb6NWGjY6KV4Cjec2HjYmmHbepfuZhMuxqEWqjaLGPRCWM9bcdapSij9euFA5v_YM_0");
+                BoldDeskSupportSdk.setFCMRegistrationToken("fXI54TkpTruS38JPQ4zGLf:APA91bGHzj-yfZEiJJKPpWYDb0NI4jV7QfwT9qZ8_FRInznrXS9_Pb6NWGjY6KV4Cjec2HjYmmHbepfuZhMuxqEWqjaLGPRCWM9bcdapSij9euFA5v_YM_0");
               },
               child: Text("Set FCM Token"),
             ),
