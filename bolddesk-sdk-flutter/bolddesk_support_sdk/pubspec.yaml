@@ -32,3 +32,6 @@ false_secrets:
   - /android/app/google-services.json
   - /ios/Runner/GoogleService-Info.plist
   - /lib/firebase_options.dart
+  - /example/android/app/google-services.json
+  - /example/ios/Runner/GoogleService-Info.plist
+  - /example/lib/firebase_options.dart
