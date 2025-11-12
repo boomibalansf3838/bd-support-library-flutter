@@ -31,8 +31,8 @@ class NotificationService {
   }
 
   static Future<void> getFCMToken() async {
-    // final fcmToken = await FirebaseMessaging.instance.getToken();
-    // print("FCM Token - $fcmToken");
+    final fcmToken = await FirebaseMessaging.instance.getToken();
+    print("FCM Token - $fcmToken");
   }
 
   static onMessage() {
