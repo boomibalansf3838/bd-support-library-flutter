@@ -1,0 +1,34 @@
+name: bolddesk_support_sdk
+description: "The SDK provides easy access to help your app end users"
+version: 2.0.0
+homepage: https://github.com/boomibalansf3838/bd-support-library-flutter
+repository: https://github.com/boomibalansf3838/bd-support-library-flutter
+
+environment:
+  sdk: ^3.7.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.bolddesksupportsdk.bolddesk_support_sdk
+        pluginClass: BolddeskSupportSdkPlugin
+      ios:
+        pluginClass: BolddeskSupportSdkPlugin
+
+# 👇 Add this outside the `flutter:` section
+false_secrets:
+  - /android/app/google-services.json
+  - /ios/Runner/GoogleService-Info.plist
+  - /lib/firebase_options.dart
